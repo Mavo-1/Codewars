@@ -1,1 +1,1 @@
-Codewars 8kyu solutions
+Codewars kyu solutions
