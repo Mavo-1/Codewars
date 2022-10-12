@@ -1,0 +1,24 @@
+//function word say is a palindrome 
+
+//Taking in word-> str, no empty strings, no !, no nums, no funny business, no caps, 1 word
+
+//return boolean true || false
+
+// racecar -> true 
+// bob -> true
+// tacos -> false
+
+
+function isPalindrome(word){
+  //word -> reverse that word - split reverse join
+  let reversedWord = word.split('').reverse().join('')
+  //revWord === word -> true||false
+  return word = reversedWord
+}
+
+
+const isPalindrome = word => word === word.split('').reverse().join('')
+
+//console.log(isPalindrome('racecar'), 'true')
+//console.log(isPalindrome('bob'),'true')
+//console.log(isPalindrome('tacos'),'false')
