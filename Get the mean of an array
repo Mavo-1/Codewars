@@ -1,0 +1,19 @@
+function getAverage(arr){
+  //loop through the array to get sum
+  let sum = arr.reduce((a,c)=> a +c)
+  //avg -> sum / arr.length
+  //return value
+  return Math.floor(sum / arr.length)
+  //round down to nearest integer
+}
+
+function getAverage(arr){
+  //loop through the array to get sum
+  return Math.floor(arr.reduce((a,c)=> a +c)/ arr.length)
+  //avg -> sum / arr.length
+  //return value
+  return Math.floor(sum / arr.length)
+  //round down to nearest integer
+}
+
+const getAverage = arr => Math.floor (arr.reduce((a,c)=>a +c)/arr.length)
