@@ -1,0 +1,5 @@
+function repeats(arr){
+//arr -> filter single values -> reduce 
+// index of num is last index of num to find if num repeats
+  return arr.filter(n => arr.indexOf(n)=== arr.lastIndexOf(n)).reduce((a,c)=> a+c,0)
+};
