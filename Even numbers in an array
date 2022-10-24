@@ -1,0 +1,11 @@
+// [arr],num
+  //never empty, at least num in the array
+  //[2,4],2
+  //return [] -> last even nums
+  
+function evenNumbers(array, number) {
+  //filter out odd nums
+  // n last nums from the filtered array - slice(-n)
+  return array.filter(n => n %2 === 0).slice(-number)
+}
+
