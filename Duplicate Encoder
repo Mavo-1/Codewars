@@ -1,0 +1,6 @@
+function duplicateEncode(word){
+    // toLowerCase
+    //split first to turn into array -> map -> indexOf=== lastIndexOf ? '(' : ')'
+    //join to make it back into string
+  return word.toLowerCase().split('').map((l,i,a)=> a.indexOf(l) === a.lastIndexOf(l) ? '(' : ')').join('')
+}
