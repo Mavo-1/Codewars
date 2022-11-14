@@ -1,0 +1,8 @@
+function toInitials(name) {
+  let nameArr = name.split(' ')
+  return `$(nameArr[0][0]). $(nameArr[1][0])`;
+}
+
+console.log(toInitials(name))
+
+//const toInitials = (name) => name.split(' ').map(word => word[0]+'.').join(' ')
