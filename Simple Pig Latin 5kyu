@@ -5,7 +5,6 @@
 
 //push,slice, charCodeAt, split, join, reverse, map,match  
 
-
 function pigIt(str){
   let marks = ['.','!','?','"']
   return str.split(' ').map(word => word.slice(1) + word[0] + (marks.includes(word) ? '' : 'ay')).join(' ')
