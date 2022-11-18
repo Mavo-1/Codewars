@@ -1,3 +1,11 @@
+//parameters - a string with a varying number of words in it. Words may have punctuation amrks separated by a space.
+//return - a string of one or multiple words seperated by spaces with 'ay' appended to the end of each word UNLESS that word is a punctuation mark.
+//examples - pigIt('Pig latin is cool'); // igPay atinlay siay oolcay || pigIt('Hello world !');     // elloHay orldway !
+//psuedo code - split string into two individual words, then split each word into two parts , first letter, and rest of string. Reverse order of these parts and concatinate them back together. Chceck if a word is actually a punctuation mark, if it is NOT, add 'ay' to the end. Finally concatenate individual words back into a single string and return.
+
+//push,slice, charCodeAt, split, join, reverse, map,match  
+
+
 function pigIt(str){
   let marks = ['.','!','?','"']
   return str.split(' ').map(word => word.slice(1) + word[0] + (marks.includes(word) ? '' : 'ay')).join(' ')
