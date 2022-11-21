@@ -1,0 +1,5 @@
+function removeConsecutiveDuplicates(str){
+  //str-> split " "-> filter
+  return str.split(" ").filter((w,i,a)=> w !==a[i-1]).join(" ")
+  //split " " with space in it checks the array between words instead of letters
+}
