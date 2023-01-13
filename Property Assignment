@@ -11,3 +11,13 @@ spaceship.color = 'glorious gold'
 spaceship.numEngines = 4
 
 delete spaceship['Secret Mission']
+
+console.log(spaceship)
+
+
+console:
+
+ {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver', numEngines: 4 }
