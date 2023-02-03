@@ -1,0 +1,8 @@
+function findShort(s){
+  let arr = s.split(' ');
+  let orderedArr = arr.sort((a,b)=>{
+    return a.length-b.length
+    })
+  return orderedArr[0].length
+  
+}
