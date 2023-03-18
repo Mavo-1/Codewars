@@ -9,3 +9,11 @@ function warnTheSheep(queue) {
       )}! You are about to be eaten by a wolf!`;
   }
 }
+
+_______________________________________________________________________________________
+
+
+function warnTheSheep(queue) {
+  let sheep = queue.reverse().indexOf('wolf');
+  return sheep === 0 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${sheep}! You are about to be eaten by a wolf!`
+}
