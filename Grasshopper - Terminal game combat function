@@ -1,0 +1,17 @@
+Create a combat function that takes the player's current health and the amount of damage recieved, and returns the player's new health. Health can't be less than 0.
+
+_____________________________________________________________________________
+
+function combat(health, damage) {
+  let life = health - damage;
+  if(life <= 0){
+    return 0
+  }
+  return life
+}
+
+_________________________________________________________
+
+function combat(health,damage){
+  return health < damage ? 0 : health - damage
+}
