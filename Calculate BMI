@@ -20,3 +20,22 @@ function bmi(weight, height) {
     return 'Overweight'
   }else return 'Obese'
 }
+__________________________________________________________________________________
+
+function bmi(weight, height) {
+  const index = weight / (height*height);
+  switch(true){
+      case index <= 18.5:
+      return "Underweight";
+      break;
+      case index <= 25.0:
+      return "Normal";
+      break;
+      case index <= 30:
+      return "Overweight";
+      break; 
+      case index > 30:
+      return 'Obese'
+      break;
+  }
+}
