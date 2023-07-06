@@ -42,6 +42,21 @@ function rowWeights(array){
 ______________________________________________________________
 
 function rowWeights(array){
+ let team1= array.filter(function(num,index){
+    return index % 2 == 0
+      })
+ let team2= array.filter(function(num,index){
+   return index % 2 !==0 
+ })
+ let oneTotal = team1.reduce((x,y)=> x+y,0);
+  let twoTotal = team2.reduce((x,y)=> x+y,0);
+  return [oneTotal,twoTotal]
+  
+}
+
+_________________________________________________________________________________________
+
+function rowWeights(array){
   let t1 = array.filter((x, i)=>i%2==0).reduce((a,item)=>a+item,0);
   let t2 = array.filter((x, i)=>i%2!=0).reduce((a,item)=>a+item,0);
   
