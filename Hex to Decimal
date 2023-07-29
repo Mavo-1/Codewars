@@ -1,0 +1,13 @@
+Complete the function which converts hex number (given as a string) to a decimal number.
+__________________________________________________
+
+function hexToDec(hexString){
+  const parsed = parseInt(hexString, 16);
+  if(isNaN(parsed)){
+  return 0
+  }else return parsed
+}
+
+function hexToDex(hexString){
+  return parseInt(hexString, 16)
+}
