@@ -20,3 +20,8 @@ function minMax(arr){
     return order.filter((e,i)=> indexesToReturn.includes(i))
   }else return arr.concat(arr)
 }
+_____________________________________________________________
+
+function minMax(arr){
+  return [Math.min(...arr), Math.max(...arr)];
+}
